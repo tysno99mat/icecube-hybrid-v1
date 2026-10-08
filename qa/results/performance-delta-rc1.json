@@ -1,0 +1,506 @@
+[
+  {
+    "id": "through",
+    "variant": "before",
+    "input": {
+      "seed": 1492,
+      "type": "through",
+      "vertex": [
+        -98.22430909997286,
+        -1988.1392191629857,
+        358.3406737058052
+      ],
+      "direction": [
+        0.9256225465145875,
+        -0.25355444522574544,
+        -0.2809502530522346
+      ],
+      "energy": 100
+    },
+    "viewport": {
+      "width": 1400,
+      "height": 1000
+    },
+    "warmup_ms": 2000,
+    "duration_ms": 10014.3,
+    "frames": 631,
+    "fps": 63.009895848936026,
+    "medianFrame_ms": 15.799999999999272,
+    "p95Frame_ms": 23.5,
+    "drawCalls": 28,
+    "triangles": 249441,
+    "geometries": 52,
+    "textures": 1,
+    "dpr": 1,
+    "effectTier": 1,
+    "postProcessing": 0,
+    "memory": {
+      "usedJSHeapSize": 18011652,
+      "totalJSHeapSize": 41625576
+    },
+    "simulationCallsUnchanged": true,
+    "webgl": true
+  },
+  {
+    "id": "through",
+    "variant": "after",
+    "input": {
+      "seed": 1492,
+      "type": "through",
+      "vertex": [
+        -98.22430909997286,
+        -1988.1392191629857,
+        358.3406737058052
+      ],
+      "direction": [
+        0.9256225465145875,
+        -0.25355444522574544,
+        -0.2809502530522346
+      ],
+      "energy": 100
+    },
+    "viewport": {
+      "width": 1400,
+      "height": 1000
+    },
+    "warmup_ms": 2000,
+    "duration_ms": 10004.1,
+    "frames": 604,
+    "fps": 60.375246149078876,
+    "medianFrame_ms": 16.199999999999818,
+    "p95Frame_ms": 25,
+    "drawCalls": 27,
+    "triangles": 249377,
+    "geometries": 52,
+    "textures": 1,
+    "dpr": 1,
+    "effectTier": 1,
+    "postProcessing": 0,
+    "memory": {
+      "usedJSHeapSize": 24563439,
+      "totalJSHeapSize": 49498211
+    },
+    "simulationCallsUnchanged": true,
+    "webgl": true
+  },
+  {
+    "id": "starting-perf",
+    "variant": "before",
+    "input": {
+      "seed": 1492,
+      "type": "starting",
+      "vertex": [
+        -88.86961299521354,
+        -1988.1392191629857,
+        324.21299049572855
+      ],
+      "direction": [
+        0.9256225465145875,
+        -0.25355444522574544,
+        -0.2809502530522346
+      ],
+      "energy": 100
+    },
+    "viewport": {
+      "width": 1400,
+      "height": 1000
+    },
+    "warmup_ms": 2000,
+    "duration_ms": 10003.2,
+    "frames": 608,
+    "fps": 60.78055022392834,
+    "medianFrame_ms": 16.300000000000182,
+    "p95Frame_ms": 23.800000000000182,
+    "drawCalls": 26,
+    "triangles": 248898,
+    "geometries": 52,
+    "textures": 1,
+    "dpr": 1,
+    "effectTier": 1,
+    "postProcessing": 0,
+    "memory": {
+      "usedJSHeapSize": 17971005,
+      "totalJSHeapSize": 38609161
+    },
+    "simulationCallsUnchanged": true,
+    "webgl": true
+  },
+  {
+    "id": "starting-perf",
+    "variant": "after",
+    "input": {
+      "seed": 1492,
+      "type": "starting",
+      "vertex": [
+        -88.86961299521354,
+        -1988.1392191629857,
+        324.21299049572855
+      ],
+      "direction": [
+        0.9256225465145875,
+        -0.25355444522574544,
+        -0.2809502530522346
+      ],
+      "energy": 100
+    },
+    "viewport": {
+      "width": 1400,
+      "height": 1000
+    },
+    "warmup_ms": 2000,
+    "duration_ms": 10017.599999999999,
+    "frames": 625,
+    "fps": 62.39019325986265,
+    "medianFrame_ms": 15.600000000000364,
+    "p95Frame_ms": 24.800000000000182,
+    "drawCalls": 25,
+    "triangles": 248834,
+    "geometries": 52,
+    "textures": 1,
+    "dpr": 1,
+    "effectTier": 1,
+    "postProcessing": 0,
+    "memory": {
+      "usedJSHeapSize": 19969897,
+      "totalJSHeapSize": 41651857
+    },
+    "simulationCallsUnchanged": true,
+    "webgl": true
+  },
+  {
+    "id": "cascade",
+    "variant": "before",
+    "input": {
+      "seed": 1492,
+      "type": "cascade",
+      "vertex": [
+        -93.54696104759319,
+        -1988.1392191629857,
+        341.27683210076685
+      ],
+      "direction": [
+        0.9256225465145875,
+        -0.25355444522574544,
+        -0.2809502530522346
+      ],
+      "energy": 100
+    },
+    "viewport": {
+      "width": 1400,
+      "height": 1000
+    },
+    "warmup_ms": 2000,
+    "duration_ms": 10012.8,
+    "frames": 623,
+    "fps": 62.22035794183446,
+    "medianFrame_ms": 15.699999999998909,
+    "p95Frame_ms": 24.5,
+    "drawCalls": 17,
+    "triangles": 248238,
+    "geometries": 48,
+    "textures": 1,
+    "dpr": 1,
+    "effectTier": 1,
+    "postProcessing": 0,
+    "memory": {
+      "usedJSHeapSize": 17044801,
+      "totalJSHeapSize": 33345177
+    },
+    "simulationCallsUnchanged": true,
+    "webgl": true
+  },
+  {
+    "id": "cascade",
+    "variant": "after",
+    "input": {
+      "seed": 1492,
+      "type": "cascade",
+      "vertex": [
+        -93.54696104759319,
+        -1988.1392191629857,
+        341.27683210076685
+      ],
+      "direction": [
+        0.9256225465145875,
+        -0.25355444522574544,
+        -0.2809502530522346
+      ],
+      "energy": 100
+    },
+    "viewport": {
+      "width": 1400,
+      "height": 1000
+    },
+    "warmup_ms": 2000,
+    "duration_ms": 10015.3,
+    "frames": 591,
+    "fps": 59.009715135842164,
+    "medianFrame_ms": 16.699999999999818,
+    "p95Frame_ms": 25.600000000000364,
+    "drawCalls": 16,
+    "triangles": 248238,
+    "geometries": 47,
+    "textures": 1,
+    "dpr": 1,
+    "effectTier": 1,
+    "postProcessing": 0,
+    "memory": {
+      "usedJSHeapSize": 18184713,
+      "totalJSHeapSize": 39861101
+    },
+    "simulationCallsUnchanged": true,
+    "webgl": true
+  },
+  {
+    "id": "cherenkov-story",
+    "variant": "before",
+    "input": {
+      "seed": 1492,
+      "type": "through",
+      "vertex": [
+        -98.22430909997286,
+        -1988.1392191629857,
+        358.3406737058052
+      ],
+      "direction": [
+        0.9256225465145875,
+        -0.25355444522574544,
+        -0.2809502530522346
+      ],
+      "energy": 100
+    },
+    "viewport": {
+      "width": 1400,
+      "height": 1000
+    },
+    "warmup_ms": 2000,
+    "duration_ms": 10002.7,
+    "frames": 611,
+    "fps": 61.08350745298769,
+    "medianFrame_ms": 16.299999999999272,
+    "p95Frame_ms": 23.600000000000364,
+    "drawCalls": 21,
+    "triangles": 248894,
+    "geometries": 50,
+    "textures": 1,
+    "dpr": 1,
+    "effectTier": 1,
+    "postProcessing": 0,
+    "memory": {
+      "usedJSHeapSize": 28424640,
+      "totalJSHeapSize": 43011560
+    },
+    "simulationCallsUnchanged": true,
+    "webgl": true
+  },
+  {
+    "id": "cherenkov-story",
+    "variant": "after",
+    "input": {
+      "seed": 1492,
+      "type": "through",
+      "vertex": [
+        -98.22430909997286,
+        -1988.1392191629857,
+        358.3406737058052
+      ],
+      "direction": [
+        0.9256225465145875,
+        -0.25355444522574544,
+        -0.2809502530522346
+      ],
+      "energy": 100
+    },
+    "viewport": {
+      "width": 1400,
+      "height": 1000
+    },
+    "warmup_ms": 2000,
+    "duration_ms": 10000.9,
+    "frames": 612,
+    "fps": 61.19449249567539,
+    "medianFrame_ms": 16.099999999998545,
+    "p95Frame_ms": 25,
+    "drawCalls": 20,
+    "triangles": 248830,
+    "geometries": 50,
+    "textures": 1,
+    "dpr": 1,
+    "effectTier": 1,
+    "postProcessing": 0,
+    "memory": {
+      "usedJSHeapSize": 28805649,
+      "totalJSHeapSize": 50513949
+    },
+    "simulationCallsUnchanged": true,
+    "webgl": true
+  },
+  {
+    "id": "mobile-390-light",
+    "variant": "before",
+    "input": {
+      "seed": 1492,
+      "type": "through",
+      "vertex": [
+        -98.22430909997286,
+        -1988.1392191629857,
+        358.3406737058052
+      ],
+      "direction": [
+        0.9256225465145875,
+        -0.25355444522574544,
+        -0.2809502530522346
+      ],
+      "energy": 100
+    },
+    "viewport": {
+      "width": 390,
+      "height": 980
+    },
+    "warmup_ms": 2000,
+    "duration_ms": 10000.6,
+    "frames": 608,
+    "fps": 60.796352218866865,
+    "medianFrame_ms": 16.300000000000182,
+    "p95Frame_ms": 23.700000000000728,
+    "drawCalls": 19,
+    "triangles": 248366,
+    "geometries": 50,
+    "textures": 1,
+    "dpr": 1,
+    "effectTier": 1,
+    "postProcessing": 0,
+    "memory": {
+      "usedJSHeapSize": 17740998,
+      "totalJSHeapSize": 36955918
+    },
+    "simulationCallsUnchanged": true,
+    "webgl": true
+  },
+  {
+    "id": "mobile-390-light",
+    "variant": "after",
+    "input": {
+      "seed": 1492,
+      "type": "through",
+      "vertex": [
+        -98.22430909997286,
+        -1988.1392191629857,
+        358.3406737058052
+      ],
+      "direction": [
+        0.9256225465145875,
+        -0.25355444522574544,
+        -0.2809502530522346
+      ],
+      "energy": 100
+    },
+    "viewport": {
+      "width": 390,
+      "height": 980
+    },
+    "warmup_ms": 2000,
+    "duration_ms": 10014.699999999999,
+    "frames": 607,
+    "fps": 60.610901974098084,
+    "medianFrame_ms": 16.399999999999636,
+    "p95Frame_ms": 26.09999999999991,
+    "drawCalls": 18,
+    "triangles": 248302,
+    "geometries": 50,
+    "textures": 1,
+    "dpr": 1,
+    "effectTier": 1,
+    "postProcessing": 0,
+    "memory": {
+      "usedJSHeapSize": 17320897,
+      "totalJSHeapSize": 21751433
+    },
+    "simulationCallsUnchanged": true,
+    "webgl": true
+  },
+  {
+    "id": "mobile-390-cascade",
+    "variant": "before",
+    "input": {
+      "seed": 1492,
+      "type": "cascade",
+      "vertex": [
+        -93.54696104759319,
+        -1988.1392191629857,
+        341.27683210076685
+      ],
+      "direction": [
+        0.9256225465145875,
+        -0.25355444522574544,
+        -0.2809502530522346
+      ],
+      "energy": 100
+    },
+    "viewport": {
+      "width": 390,
+      "height": 980
+    },
+    "warmup_ms": 2000,
+    "duration_ms": 10014.099999999999,
+    "frames": 595,
+    "fps": 59.4162231253932,
+    "medianFrame_ms": 16.800000000000182,
+    "p95Frame_ms": 23.800000000000182,
+    "drawCalls": 17,
+    "triangles": 248238,
+    "geometries": 48,
+    "textures": 1,
+    "dpr": 1,
+    "effectTier": 1,
+    "postProcessing": 0,
+    "memory": {
+      "usedJSHeapSize": 22624174,
+      "totalJSHeapSize": 40624846
+    },
+    "simulationCallsUnchanged": true,
+    "webgl": true
+  },
+  {
+    "id": "mobile-390-cascade",
+    "variant": "after",
+    "input": {
+      "seed": 1492,
+      "type": "cascade",
+      "vertex": [
+        -93.54696104759319,
+        -1988.1392191629857,
+        341.27683210076685
+      ],
+      "direction": [
+        0.9256225465145875,
+        -0.25355444522574544,
+        -0.2809502530522346
+      ],
+      "energy": 100
+    },
+    "viewport": {
+      "width": 390,
+      "height": 980
+    },
+    "warmup_ms": 2000,
+    "duration_ms": 10015.2,
+    "frames": 615,
+    "fps": 61.40666187395159,
+    "medianFrame_ms": 15.800000000000182,
+    "p95Frame_ms": 24.600000000000364,
+    "drawCalls": 16,
+    "triangles": 248238,
+    "geometries": 47,
+    "textures": 1,
+    "dpr": 1,
+    "effectTier": 1,
+    "postProcessing": 0,
+    "memory": {
+      "usedJSHeapSize": 22865197,
+      "totalJSHeapSize": 38789821
+    },
+    "simulationCallsUnchanged": true,
+    "webgl": true
+  }
+]

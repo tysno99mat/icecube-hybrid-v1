@@ -1,0 +1,17 @@
+{
+  "name": "icecube-hybrid-v1",
+  "version": "1.0.0-visual-polish-rc.1",
+  "private": true,
+  "type": "module",
+  "description": "Frozen RC0.7.1 educational simulation with an inspectable experience layer",
+  "scripts": {
+    "build": "node build/build.mjs",
+    "start": "node build/serve.mjs",
+    "test": "node qa/regression.mjs",
+    "baseline": "node qa/replay-baseline.mjs",
+    "test:renderer": "node qa/enrichment-check.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

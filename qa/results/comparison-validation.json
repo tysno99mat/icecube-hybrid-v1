@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "pairs": 5,
+  "rawImages": 10,
+  "comparisons": [
+    {
+      "id": "through",
+      "status": "PASS",
+      "resultDigest": "e555a8dc9da61a8e6e8155240ba351dabdc3ad85136aca757e2cbdd324b29fb8",
+      "sameInputTimeViewportCanvasUI": true,
+      "cameraTargetSame": true,
+      "cameraPositionSame": true,
+      "cameraDifference": null
+    },
+    {
+      "id": "cascade",
+      "status": "PASS",
+      "resultDigest": "aee5d24c8332b9fda4201387aa6705ac5c42c5f30e312c1ea420d43d3036dad2",
+      "sameInputTimeViewportCanvasUI": true,
+      "cameraTargetSame": true,
+      "cameraPositionSame": false,
+      "cameraDifference": "framing offset [650,300,720] -> [340,155,395] m"
+    },
+    {
+      "id": "cherenkov-story",
+      "status": "PASS",
+      "resultDigest": "e555a8dc9da61a8e6e8155240ba351dabdc3ad85136aca757e2cbdd324b29fb8",
+      "sameInputTimeViewportCanvasUI": true,
+      "cameraTargetSame": true,
+      "cameraPositionSame": true,
+      "cameraDifference": null
+    },
+    {
+      "id": "mobile-390-light",
+      "status": "PASS",
+      "resultDigest": "e555a8dc9da61a8e6e8155240ba351dabdc3ad85136aca757e2cbdd324b29fb8",
+      "sameInputTimeViewportCanvasUI": true,
+      "cameraTargetSame": true,
+      "cameraPositionSame": true,
+      "cameraDifference": null
+    },
+    {
+      "id": "mobile-390-cascade",
+      "status": "PASS",
+      "resultDigest": "aee5d24c8332b9fda4201387aa6705ac5c42c5f30e312c1ea420d43d3036dad2",
+      "sameInputTimeViewportCanvasUI": true,
+      "cameraTargetSame": true,
+      "cameraPositionSame": false,
+      "cameraDifference": "framing offset [650,300,720] -> [340,155,395] m"
+    }
+  ],
+  "performanceScenarios": 6,
+  "performanceSamples": 12,
+  "scope": "desktop in-app browser viewport QA; physical mobile and deployment untested"
+}

@@ -1,0 +1,4 @@
+// Unpack the unmodified author archive into temporary storage; never regenerate historical evidence in place.
+import fs from 'node:fs';import os from 'node:os';import path from 'node:path';import {execFileSync} from 'node:child_process';
+const temp=fs.mkdtempSync(path.join(os.tmpdir(),'icecube-baseline-'));
+try{execFileSync('unzip',['-q',path.resolve('provenance/Claude_IceCube_RC0.7.1_Candidate_1.zip'),'-d',temp]);const root=path.join(temp,'Claude_IceCube_RC0.7.1_Candidate');const log=execFileSync('sh',['REPRODUCE.sh'],{cwd:root,env:{...process.env,LC_ALL:'C',LANG:'C'},encoding:'utf8',maxBuffer:5e6});fs.mkdirSync('qa/results',{recursive:true});fs.writeFileSync('qa/results/baseline-after.log',log);fs.cpSync(path.join(root,'results'),'qa/results/baseline-after',{recursive:true});console.log(log.split('\n').filter(l=>/ALL GATES|SAME |SKIP/.test(l)).join('\n'));}finally{fs.rmSync(temp,{recursive:true,force:true});}

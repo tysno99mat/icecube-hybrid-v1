@@ -1,0 +1,22 @@
+{
+  "checks": [
+    {
+      "name": "PE display scaling stays finite, bounded and monotonic across six orders of magnitude",
+      "status": "PASS"
+    },
+    {
+      "name": "Continuous arrival encoding uses returned times and preserves early-to-late ordering",
+      "status": "PASS"
+    },
+    {
+      "name": "Scrubbing visual aids backward/forward does not run physics or mutate returned events",
+      "status": "PASS"
+    },
+    {
+      "name": "Frozen core remains identical in source and built payload",
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS",
+  "coreSHA": "b130dcf5ed8db225420bb92070206d96b5c782e9baf35fc9b300589f372882f9"
+}

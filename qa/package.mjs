@@ -1,0 +1,10 @@
+import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';import {execFileSync} from 'node:child_process';
+const root=process.cwd(),parent=path.dirname(root),name=path.basename(root),zip=path.join(parent,'IceCube_Hybrid_V1_Visual_Polish_RC1_Candidate.zip');
+const expected='b130dcf5ed8db225420bb92070206d96b5c782e9baf35fc9b300589f372882f9';
+const sha=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+if(sha('src/core.mjs')!==expected||sha('dist/src/core.mjs')!==expected)throw Error('STOP RELEASE: frozen core drift');
+const walk=d=>fs.readdirSync(d,{withFileTypes:true}).flatMap(e=>['node_modules','.git','.vercel','.netlify','.DS_Store'].includes(e.name)?[]:e.isDirectory()?walk(path.join(d,e.name)):[path.join(d,e.name)]);
+const files=walk(root).filter(f=>path.basename(f)!=='SHA256SUMS.txt').sort();
+fs.writeFileSync('SHA256SUMS.txt',files.map(f=>sha(f)+'  '+path.relative(root,f).split(path.sep).join('/')).join('\n')+'\n');
+fs.rmSync(zip,{force:true});execFileSync('zip',['-q','-r',zip,name,'-x','*/node_modules/*','*/.git/*','*/.vercel/*','*/.netlify/*','*/.DS_Store'],{cwd:parent});
+execFileSync('unzip',['-tq',zip],{stdio:'pipe'});const zipSHA=sha(zip);fs.writeFileSync(path.join(parent,'IceCube_Hybrid_V1_Visual_Polish_RC1_Candidate_SHA256.txt'),zipSHA+'  IceCube_Hybrid_V1_Visual_Polish_RC1_Candidate.zip\n');console.log(JSON.stringify({files:files.length,zip,zipBytes:fs.statSync(zip).size,zipSHA,coreSHA:expected}));

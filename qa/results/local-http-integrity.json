@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "path": "src/core.mjs",
+      "sha256": "b130dcf5ed8db225420bb92070206d96b5c782e9baf35fc9b300589f372882f9",
+      "servedEqualsDist": true
+    },
+    {
+      "path": "src/adapter/index.mjs",
+      "sha256": "98018d3ee4682dda76389fd2f5d8f4cd31abba98f27d44c695465e7c86b77701",
+      "servedEqualsDist": true
+    },
+    {
+      "path": "src/renderer/scene.mjs",
+      "sha256": "2863be717e2f08ab4b5542f37b702efb4e987f0020cf3f7eee1681c2db51f3dc",
+      "servedEqualsDist": true
+    },
+    {
+      "path": "src/renderer/light-layers.mjs",
+      "sha256": "cf470c95a6c441de0a054b746d4b5bb3af95f0c4ae024ce7109320467a7bc626",
+      "servedEqualsDist": true
+    },
+    {
+      "path": "src/ui/app.mjs",
+      "sha256": "b5b11483cb810cc93069014038fd0c5456ad01bc72826eab949fab19da7ed97d",
+      "servedEqualsDist": true
+    },
+    {
+      "path": "src/ui/styles.css",
+      "sha256": "5a18827056d88eafc7ca94453434a9c83ad5fd88f83fb59292b9c2e1421c0375",
+      "servedEqualsDist": true
+    },
+    {
+      "path": "exact-fixtures.json",
+      "sha256": "ac3f2bef61001bafeb63313cfae5987d0e3984bb892a4c4800d28e1836a0fc8b",
+      "servedEqualsDist": true
+    },
+    {
+      "path": "og/icecube-og-1200x630.jpg",
+      "sha256": "3e6f67ac1fe28b2c209b639f677e68b3eb85c1a8e6232f528bfbf6eac44934f8",
+      "servedEqualsDist": true
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "through",
+    "rect": {
+      "height": 688.3359375,
+      "width": 1280,
+      "x": 52.5,
+      "y": 215.1796875
+    },
+    "file": "qa/comparison-pairs/comparison-through.jpg"
+  },
+  {
+    "id": "cascade",
+    "rect": {
+      "height": 663.3515625,
+      "width": 1280,
+      "x": 52.5,
+      "y": 927.515625
+    },
+    "file": "qa/comparison-pairs/comparison-cascade.jpg"
+  },
+  {
+    "id": "cherenkov-story",
+    "rect": {
+      "height": 688.3359375,
+      "width": 1280,
+      "x": 52.5,
+      "y": 1614.8671875
+    },
+    "file": "qa/comparison-pairs/comparison-cherenkov-story.jpg"
+  },
+  {
+    "id": "mobile-390-light",
+    "rect": {
+      "height": 677.09375,
+      "width": 1280,
+      "x": 52.5,
+      "y": 2327.203125
+    },
+    "file": "qa/comparison-pairs/comparison-mobile-390-light.jpg"
+  },
+  {
+    "id": "mobile-390-cascade",
+    "rect": {
+      "height": 677.09375,
+      "width": 1280,
+      "x": 52.5,
+      "y": 3028.296875
+    },
+    "file": "qa/comparison-pairs/comparison-mobile-390-cascade.jpg"
+  }
+]

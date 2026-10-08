@@ -1,0 +1,12 @@
+{
+  "buildSHA": "52e17f35b1b83c6f61cdf16ea72982d0f0e12500cb9d3de24056c4ab1967694d",
+  "buildDate": "2026-10-08",
+  "version": "1.0.0-visual-polish-rc.1",
+  "coreSHA": "b130dcf5ed8db225420bb92070206d96b5c782e9baf35fc9b300589f372882f9",
+  "candidateArchiveSHA": "6a4f7bff25014d7cbf1dea4d16848dbaa3d2b72ddaa3365a712ea92e99188cf3",
+  "environment": "preview",
+  "productionUrl": null,
+  "imageUrl": null,
+  "canonicalInjected": false,
+  "status": "LOCAL_VISUAL_QA_REQUIRED"
+}

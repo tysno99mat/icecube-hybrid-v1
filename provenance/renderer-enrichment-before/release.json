@@ -1,0 +1,12 @@
+{
+  "buildSHA": "7370390a3f0f0ee3f44713b6682f74bbe8542c8e976f80072d8fa77513ff203c",
+  "buildDate": "2026-10-08",
+  "version": "1.0.0-rc.2-renderer",
+  "coreSHA": "b130dcf5ed8db225420bb92070206d96b5c782e9baf35fc9b300589f372882f9",
+  "candidateArchiveSHA": "6a4f7bff25014d7cbf1dea4d16848dbaa3d2b72ddaa3365a712ea92e99188cf3",
+  "environment": "preview",
+  "productionUrl": null,
+  "imageUrl": null,
+  "canonicalInjected": false,
+  "status": "LOCAL_VISUAL_QA_REQUIRED"
+}

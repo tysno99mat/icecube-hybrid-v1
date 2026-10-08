@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-08",
+  "coreSHA_before": "b130dcf5ed8db225420bb92070206d96b5c782e9baf35fc9b300589f372882f9",
+  "baselineBuild": {
+    "buildSHA": "7370390a3f0f0ee3f44713b6682f74bbe8542c8e976f80072d8fa77513ff203c",
+    "buildDate": "2026-10-08",
+    "version": "1.0.0-rc.2-renderer",
+    "coreSHA": "b130dcf5ed8db225420bb92070206d96b5c782e9baf35fc9b300589f372882f9",
+    "candidateArchiveSHA": "6a4f7bff25014d7cbf1dea4d16848dbaa3d2b72ddaa3365a712ea92e99188cf3",
+    "environment": "preview",
+    "productionUrl": null,
+    "imageUrl": null,
+    "canonicalInjected": false,
+    "status": "LOCAL_VISUAL_QA_REQUIRED"
+  },
+  "sourceSHA256": {
+    "src/adapter/index.mjs": "98018d3ee4682dda76389fd2f5d8f4cd31abba98f27d44c695465e7c86b77701",
+    "src/adapter/types.d.ts": "d7b0b04f62665c5806463d894e36f66824613663112432a503ab91694ace00b0",
+    "src/core.mjs": "b130dcf5ed8db225420bb92070206d96b5c782e9baf35fc9b300589f372882f9",
+    "src/diagnostics/panel.mjs": "f7967b98276700b56e98181f61d9aef9d3c6da1231b382ca246a6226817a2764",
+    "src/renderer/light-layers.mjs": "a7e4d0b3bfdcea4837446b3a762cb0a29306c8caba41e590640822d2974e55e6",
+    "src/renderer/scene.mjs": "f18053d0bfda9cd677202ee03099a27f2a200a660b2065f99b6d54dc306bf1b4",
+    "src/renderer/visual-mapping.mjs": "a5ce41a34cd7858f2c2d3f8483a51f7a423526d3d38d5ee1344aae9c99df5865",
+    "src/story/index.mjs": "e067b3df6c7973e3d2870213aefab3a787d904150f29411e13594a59a85af432",
+    "src/ui/app.mjs": "2803bfeb6b18f85152bb5892ceff3cd544d79886e233e68d0884563c0af85a10",
+    "src/ui/styles.css": "6ec4cb6af179a62453274ddce68b08a831a9c7e7b22b9c716077b7012ba03e4a"
+  },
+  "socialImageSHA256": "3e6f67ac1fe28b2c209b639f677e68b3eb85c1a8e6232f528bfbf6eac44934f8",
+  "metadataConfigSHA256": "893ab251f12bb25e3954c97f6783e9c84fb54d4086594f18832ccaf2380bbb9a",
+  "exactFixturesSHA256": "ac3f2bef61001bafeb63313cfae5987d0e3984bb892a4c4800d28e1836a0fc8b"
+}

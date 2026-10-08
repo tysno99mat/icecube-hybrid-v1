@@ -1,0 +1,115 @@
+{
+  "date": "2026-10-08",
+  "node": "v22.23.2",
+  "platform": "darwin/arm64",
+  "coreSHA": "b130dcf5ed8db225420bb92070206d96b5c782e9baf35fc9b300589f372882f9",
+  "agreement": 306,
+  "exact": [
+    {
+      "seed": 40003618,
+      "exactInput": {
+        "seed": 40003618,
+        "type": "starting",
+        "energy": 100,
+        "vertex": [
+          13.51335848642547,
+          -2054.7249785158783,
+          -349.13105856992416
+        ],
+        "direction": [
+          0.254969431141881,
+          0.5841294150450267,
+          -0.7705734330109887
+        ]
+      },
+      "angularError_deg": 123.19798699753869,
+      "clean": 29,
+      "resultHash": "6ba2cd42d675f2fec4c123fa34155b6ecb7d8840d5ee860a2325e1260192acc1"
+    },
+    {
+      "seed": 7006668,
+      "exactInput": {
+        "seed": 7006668,
+        "type": "starting",
+        "vertex": [
+          363.5447376979919,
+          -2068.200532742776,
+          80.42098546382503
+        ],
+        "direction": [
+          0.45510548053211586,
+          -0.08193538570776582,
+          0.8866597961780783
+        ],
+        "energy": 100
+      },
+      "angularError_deg": 98.00973157529418,
+      "clean": 37,
+      "resultHash": "f0512a779e4756c682a97707b6e438b2eeb4b688f40e906c1ba178c827682644"
+    },
+    {
+      "seed": 7003149,
+      "exactInput": {
+        "seed": 7003149,
+        "type": "starting",
+        "vertex": [
+          62.786472059811075,
+          -2089.6347515285015,
+          -109.79675898151777
+        ],
+        "direction": [
+          -0.1344149154598042,
+          0.21693254308775067,
+          -0.9668882573759052
+        ],
+        "energy": 10
+      },
+      "angularError_deg": 122.23324681446097,
+      "clean": 30,
+      "resultHash": "9209adbec93cffedcde129b91e39bd4152ce6e51883516202657051252effce1"
+    }
+  ],
+  "tests": [
+    {
+      "name": "Frozen source and served source SHA-256",
+      "status": "PASS"
+    },
+    {
+      "name": "Three exact failures: complete returned results unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "306 controlled events: adapter complete output equals direct frozen API",
+      "status": "PASS"
+    },
+    {
+      "name": "Untrusted invalid inputs retain frozen rejection semantics",
+      "status": "PASS"
+    },
+    {
+      "name": "Geometry and contracts remain unchanged; adapter copies are immutable",
+      "status": "PASS"
+    },
+    {
+      "name": "DOM inspector only reports returned fields and unhit nulls",
+      "status": "PASS"
+    },
+    {
+      "name": "Dynamic story semantics and first-contact text",
+      "status": "PASS"
+    },
+    {
+      "name": "No alternate physics import, override, or per-frame simulation",
+      "status": "PASS"
+    },
+    {
+      "name": "Preview metadata: supplied title, no invented canonical or origin",
+      "status": "PASS"
+    },
+    {
+      "name": "Production metadata gate rejects missing or unsafe origins",
+      "status": "PASS"
+    }
+  ],
+  "allPass": true
+}

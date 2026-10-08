@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "coreSHA": "b130dcf5ed8db225420bb92070206d96b5c782e9baf35fc9b300589f372882f9",
+  "coreSourceDistBeforeEqual": true,
+  "protectedFiles": [
+    {
+      "path": "src/core.mjs",
+      "sha256": "b130dcf5ed8db225420bb92070206d96b5c782e9baf35fc9b300589f372882f9",
+      "unchanged": true
+    },
+    {
+      "path": "src/adapter/index.mjs",
+      "sha256": "98018d3ee4682dda76389fd2f5d8f4cd31abba98f27d44c695465e7c86b77701",
+      "unchanged": true
+    },
+    {
+      "path": "src/adapter/types.d.ts",
+      "sha256": "d7b0b04f62665c5806463d894e36f66824613663112432a503ab91694ace00b0",
+      "unchanged": true
+    },
+    {
+      "path": "src/diagnostics/panel.mjs",
+      "sha256": "f7967b98276700b56e98181f61d9aef9d3c6da1231b382ca246a6226817a2764",
+      "unchanged": true
+    },
+    {
+      "path": "src/renderer/visual-mapping.mjs",
+      "sha256": "a5ce41a34cd7858f2c2d3f8483a51f7a423526d3d38d5ee1344aae9c99df5865",
+      "unchanged": true
+    }
+  ],
+  "sourceChanges": [
+    "src/renderer/light-layers.mjs",
+    "src/renderer/scene.mjs",
+    "src/story/index.mjs",
+    "src/ui/app.mjs",
+    "src/ui/styles.css"
+  ],
+  "hitFieldByteIdentical": true,
+  "depthContextByteIdentical": true,
+  "coneGeometryByteIdentical": true,
+  "mandatoryWarningsByteIdentical": true,
+  "servedMetadataHeadByteIdentical": true,
+  "socialImageByteIdentical": true,
+  "exactFixturesByteIdentical": true,
+  "adapterChanged": false
+}

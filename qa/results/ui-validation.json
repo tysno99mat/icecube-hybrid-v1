@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "records": 39,
+  "desktopWidths": [
+    1280,
+    1400,
+    1920
+  ],
+  "mobileWidths": [
+    360,
+    390,
+    430
+  ],
+  "layouts": [
+    {
+      "width": 360,
+      "type": "linefit",
+      "status": "PASS",
+      "warningLegendGap_px": 16.609375,
+      "conservativeOverlayAreaFraction": 0.4865413056352076,
+      "readoutLabelsFit": true
+    },
+    {
+      "width": 360,
+      "type": "cascade",
+      "status": "PASS",
+      "warningLegendGap_px": 16.609375,
+      "conservativeOverlayAreaFraction": 0.4865413056352076,
+      "readoutLabelsFit": true
+    },
+    {
+      "width": 390,
+      "type": "linefit",
+      "status": "PASS",
+      "warningLegendGap_px": 16.609375,
+      "conservativeOverlayAreaFraction": 0.4590286097099622,
+      "readoutLabelsFit": true
+    },
+    {
+      "width": 390,
+      "type": "cascade",
+      "status": "PASS",
+      "warningLegendGap_px": 16.625,
+      "conservativeOverlayAreaFraction": 0.4890593832397111,
+      "readoutLabelsFit": true
+    },
+    {
+      "width": 430,
+      "type": "linefit",
+      "status": "PASS",
+      "warningLegendGap_px": 41.3046875,
+      "conservativeOverlayAreaFraction": 0.42681351265658973,
+      "readoutLabelsFit": true
+    },
+    {
+      "width": 430,
+      "type": "cascade",
+      "status": "PASS",
+      "warningLegendGap_px": 41.3046875,
+      "conservativeOverlayAreaFraction": 0.42681351265658973,
+      "readoutLabelsFit": true
+    }
+  ],
+  "exactFixturesUnchanged": true,
+  "contextRecoveryWithoutSimulation": true,
+  "compactLegendLayerAndInvalidInputChecks": true,
+  "mandatoryWarningByteIdentical": true,
+  "detailSummaryAtLeast44px": true,
+  "reducedMotionUI": true,
+  "realPhone": "UNKNOWN / NOT TESTED",
+  "physicalSafeArea": "UNKNOWN / NOT TESTED"
+}

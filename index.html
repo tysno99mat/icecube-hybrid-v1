@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#061522">
+<!-- SOCIAL_HEAD -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23061522'/%3E%3Cpath d='M16 4v24M7 9v14M25 9v14' stroke='%2382e9f4'/%3E%3Cg fill='%2382e9f4'%3E%3Ccircle cx='16' cy='9' r='3'/%3E%3Ccircle cx='16' cy='23' r='3'/%3E%3Ccircle cx='7' cy='16' r='2'/%3E%3Ccircle cx='25' cy='16' r='2'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="stylesheet" href="src/ui/styles.css">
+<script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body>
+<a class="skip-link" href="#observatory">Skip to observatory</a>
+<header class="site-header"><a class="wordmark" href="#top" aria-label="IceCube home"><span class="mark">⠿</span> ICECUBE <span class="edition">INTERACTIVE OBSERVATORY</span></a><nav aria-label="Main navigation"><a href="#observatory">Observatory</a><a href="#learn">Model notes</a><button id="motion" class="text-button" aria-pressed="false">Reduce motion</button></nav></header>
+<main>
+<section class="hero" id="top" aria-labelledby="hero-title">
+<div class="hero-copy"><p class="eyebrow"><span class="tiny-rule"></span> 90° S · BENEATH ANTARCTICA</p><h1 id="hero-title">ICE<span>CUBE</span></h1><h2>SEEING THE UNIVERSE<br>THROUGH A KILOMETER<br>OF ICE</h2><p class="intro">宇宙的訊息，藏在一瞬間的光裡。<br>深入南極冰層，看見微中子如何留下線索。</p><div class="hero-actions"><button class="primary" id="start-event">Start a neutrino event</button><button class="secondary" id="explore-detector">Explore the detector</button></div><p class="positioning">A physics-informed educational simulation<br>of the IceCube Neutrino Observatory.<br>Not a quantitatively calibrated detector simulation.</p></div>
+<div id="hero-scene" class="hero-scene" aria-label="3D Antarctic detector overview"></div>
+<div class="hero-depth" aria-hidden="true"><span>SURFACE</span><i></i><span>1,450 m</span><i></i><span>2,450 m</span></div>
+<p class="scene-note">SOUTH POLE STATION CONTEXT · SCHEMATIC</p>
+<div class="hero-footer"><div><strong>86</strong><span>STRINGS</span></div><div><strong>5,160</strong><span>OPTICAL SENSORS</span></div><div><strong>1 km³</strong><span>INSTRUMENTED ICE</span></div><a href="#observatory">Enter the ice <span aria-hidden="true">↓</span></a></div>
+</section>
+<div class="permanent-disclosure"><span>MODEL BOUNDARY</span> Physics-informed educational simulation. Not a quantitatively calibrated IceCube detector simulation.</div>
+<section class="observatory" id="observatory" aria-labelledby="workspace-title">
+<div class="section-head"><div><p class="eyebrow">01 / OBSERVATORY</p><h2 id="workspace-title">One event. A thousand clues.</h2></div><p>Invisible particle → charged secondary → light → sensors → inference</p></div>
+<div class="workspace">
+<div class="viewport-wrap">
+<div id="viewport" tabindex="0" role="region" aria-label="Interactive 3D detector. Drag to orbit, scroll or pinch to zoom; arrow keys rotate and plus or minus zoom."></div>
+<div class="viewport-heading"><div><span class="eyebrow">FROZEN RC0.7.1 · EDUCATIONAL</span><h3 id="event-heading">Through-going track</h3></div><span class="event-badge" id="event-seed">SEED 1492</span></div>
+<div class="camera-bar" role="group" aria-label="Camera views"><button data-camera="Antarctica">Antarctica</button><button data-camera="Detector" aria-pressed="true">Detector</button><button data-camera="Event">Event</button><button data-camera="DOM">DOM</button><button data-camera="Free">Free</button></div>
+<div class="legend" aria-label="Line and sensor meanings"><span class="truth-key" id="truth-legend">黃色實線 = 模擬真值路徑</span><span class="candidate-key" id="candidate-legend" hidden>青色虛線＋箭頭 = 候選 LineFit</span><span class="hit-key"><i class="arrival-swatch" aria-hidden="true"></i> 顏色＝模擬到達時間（早→晚）；大小＝模擬光量（PE，有上限）</span><span class="light-key" id="light-legend">藍色光錐／光殼＝切倫科夫光示意</span></div>
+<div class="mobile-legend" aria-label="目前可見的視覺編碼"><span id="mobile-truth-key" class="compact-truth" hidden><i aria-hidden="true"></i>模擬真值</span><span id="mobile-time-key" class="compact-time" hidden><i aria-hidden="true"></i>模擬到達時間</span><span id="mobile-light-key" class="compact-light" hidden><i aria-hidden="true"></i>光層示意</span><span id="mobile-candidate-key" class="compact-candidate" hidden><i aria-hidden="true"></i>候選 LineFit</span></div>
+<div id="viewport-warning" class="viewport-warning" role="note" hidden></div>
+<div id="fallback" class="fallback" role="alert" hidden><h3>3D view unavailable</h3><p id="fallback-reason"></p><button id="retry-webgl" class="secondary">Retry 3D view</button><p>事件數值與時間軸仍可檢視。</p></div>
+<div id="dom-inspector" class="dom-inspector" hidden><button id="close-inspector" class="close" aria-label="Close DOM inspector">×</button><p class="eyebrow">MODELED SENSOR RESPONSE</p><h3 id="dom-title"></h3><dl id="dom-values"></dl><button id="focus-dom" class="text-button">View this DOM</button></div>
+<div class="process-label" id="process-label">切倫科夫光示意 · 移動亮點＝帶電次級粒子位置標記</div>
+<div class="view-hint" id="view-hint">Drag to orbit · scroll to zoom · tap a sensor to inspect</div>
+<div class="readout-strip"><div><strong id="hit-count">—</strong><span>MODELED HITS</span></div><div><strong id="clean-count">—</strong><span>CLEAN HITS</span></div><div class="energy-metric"><strong id="energy-readout">—</strong><span>TeV INPUT</span></div><div><strong id="active-count">0</strong><span>VISIBLE NOW</span></div></div>
+</div>
+<aside class="control-panel" aria-label="Event settings"><details class="mobile-sheet" open><summary>Event controls <span>Tap to expand</span></summary><div class="sheet-content">
+<p class="eyebrow">EVENT CONFIGURATION</p><div class="segmented" role="group" aria-label="Event type"><button data-type="through" aria-pressed="true">Through</button><button data-type="starting" aria-pressed="false">Starting</button><button data-type="cascade" aria-pressed="false">Cascade</button></div>
+<p id="type-description" class="control-description">A charged secondary traverses the detector.</p>
+<label for="energy">Energy input <span>TeV</span></label><input id="energy" type="number" min="0.1" max="100000" step="any" value="100"><p class="field-note">Accepted input: 0.1–100,000 TeV</p>
+<label for="direction">Controlled travel direction</label><select id="direction"><option value="any">Any</option><option value="up">Up-going secondary</option><option value="down">Down-going secondary</option></select>
+<label for="seed">Exact seed</label><input id="seed" type="number" min="0" max="4294967295" step="1" value="1492">
+<div class="button-row"><button id="generate" class="primary">Generate event</button><button id="regenerate" class="secondary" aria-label="Generate with a new seed">New seed</button></div>
+<p id="input-error" class="input-error" role="alert" hidden></p><p id="event-state" class="field-note" aria-live="polite"></p>
+<div class="panel-divider"></div><p class="eyebrow">VIEW LAYERS</p>
+<label class="check"><input type="checkbox" id="show-truth" checked><span id="truth-toggle-label">模擬真值路徑</span><i class="line-sample truth"></i></label>
+<label class="check"><input type="checkbox" id="show-candidate"><span id="candidate-toggle-label">顯示 LineFit 示意（可能失敗／反向）</span><i class="line-sample candidate"></i></label>
+<p id="control-warning" class="control-warning" role="note" hidden></p><details class="layers"><summary>Detector layers</summary><label class="check"><input id="show-light" type="checkbox" checked>切倫科夫光／光前緣示意</label><label class="check"><input id="show-ghost" type="checkbox" checked>微中子路徑示意 · 不發光</label><label class="check"><input id="show-context" type="checkbox" checked>深度／塵埃／岩床脈絡</label><p class="field-note">光錐、光殼、移動標記與環境透明度均為視覺示意；不表示校準光子密度。IceTop 為放大、簡化的地表脈絡。</p><label class="check"><input id="show-strings" type="checkbox" checked>Strings</label><label class="check"><input id="show-doms" type="checkbox" checked>DOMs</label><label class="check"><input id="show-ice" type="checkbox" checked>Ice volume</label><label class="check"><input id="show-deepcore" type="checkbox" checked>Highlight DeepCore</label><label class="check"><input id="show-noise" type="checkbox" checked>Existing noise · view only</label></details>
+<details class="visual-details" id="visual-details"><summary>What am I seeing?</summary><p>黃色實線＝模擬真值路徑；Cascade 的黃色菱形＝真值頂點。青色虛線＋箭頭＝候選 LineFit；Cascade 僅顯示電荷重心菱形，不提供方向。</p><p><i class="arrival-swatch" aria-hidden="true"></i> 時間色帶由早到晚（藍→紫→粉）；DOM 按模型命中時間點亮，點大小由模擬 PE 映射且有上限。灰色點表示模型噪音。</p><p>藍色光錐／球形光殼是共用事件時間的示意，不是校準光子密度。移動亮點標記帶電次級粒子的位置；淡紫虛線是微中子路徑示意，本身不發光。</p><p>拖曳旋轉、捲動或雙指縮放；點選 DOM 可檢視原始命中。能量輸入保留在上方控制欄。</p></details>
+<button id="diagnostics-toggle" class="diagnostics-button" aria-expanded="false" aria-controls="diagnostics">Inspect model & diagnostics <span>＋</span></button>
+</div></details></aside>
+</div>
+<div id="interpretation-warning" class="interpretation-warning" role="note" hidden><strong id="warning-heading"></strong><p id="warning-text"></p><span id="warning-status"></span></div>
+<div class="playback"><div class="playback-buttons"><button id="play" aria-label="Play event" class="primary">Play</button><button id="restart" class="secondary" aria-label="Restart event">↺</button></div><label class="scrubber-label" for="timeline"><span>MODEL TIME <output id="timestamp">0 ns</output></span><input id="timeline" type="range" min="0" max="1" step="0.001" value="0" aria-label="Event timeline"></label><label class="speed-label" for="speed">Speed<select id="speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option></select></label></div>
+<div class="story-panel"><div class="story-top"><p class="eyebrow">FOLLOW THE SIGNAL</p><div><button id="story-auto" class="text-button" aria-pressed="false">Start Story Mode</button><button id="story-skip" class="text-button">Skip story</button></div></div><div class="story-steps" role="group" aria-label="Story stages"><button data-step="0" aria-pressed="true">① Particle</button><button data-step="1">② Interaction</button><button data-step="2">③ Light</button><button data-step="3">④ Sensors</button><button data-step="4" id="final-step">⑤ 方向重建示意</button></div><div class="story-content"><div><h3 id="story-title">① The Ghost Particle</h3><p id="story-subtitle"></p></div><p id="story-text"></p><div class="story-navigation"><button id="story-prev" class="secondary" aria-label="Previous story stage">Previous</button><button id="story-next" class="secondary" aria-label="Next story stage">Next</button></div></div></div>
+<div id="diagnostics" class="diagnostics" hidden aria-labelledby="diagnostics-title"></div>
+</section>
+<section id="learn" class="learn" aria-labelledby="learn-title"><div class="section-head"><div><p class="eyebrow">02 / MODEL NOTES</p><h2 id="learn-title">Light is evidence.<br>Interpretation has limits.</h2></div><p>The picture is a way into the science.<br>The boundary is part of the story.</p></div><div class="learn-grid"><article><span class="article-number">01</span><h3>從不可見，到可見</h3><p>微中子本身不直接發出這裡的切倫科夫光。罕見的作用產生帶電次級粒子，這些粒子在冰中形成光訊號，讓 DOM 記錄時間與模型電荷。</p><a href="https://icecube.wisc.edu/science/icecube/" target="_blank" rel="noreferrer">Explore IceCube science ↗</a></article><article><span class="article-number">02</span><h3>真值不是重建</h3><p>黃色實線是模型已知的次級粒子路徑。青色虛線與箭頭是根據命中計算的候選 LineFit。Starting 拓撲或不利的感測器分布可能讓它嚴重偏離，甚至反向。</p><p>模擬真值來向只存在於模擬中；SIMULATION QA ONLY 不能視為真實事件的可信度。</p></article><article><span class="article-number">03</span><h3>教學模型的邊界</h3><p>這不是官方 IceCube 模擬，也不是 PPC / CLSim 或定量校準的偵測器與重建。冰層傳輸、光量及散射延遲未以官方偵測器資料校準。</p><p>Cascade 的模型光分布完全等向，不能識別物理入射方向。亮度、點大小與光暈是視覺映射，不代表校準能量。</p></article></div></section>
+</main>
+<footer class="site-footer"><a class="wordmark" href="#top">ICECUBE</a><p>Physics-informed educational simulation.<br>Not a quantitatively calibrated IceCube detector simulation.</p><span>HYBRID V1 RC · CORE RC0.7.1<br>QUANTITATIVE ICECUBE PHYSICS BASELINE = NO</span></footer>
+<noscript><div class="noscript">Enable JavaScript to explore the detector. This educational simulation is not quantitatively calibrated.</div></noscript>
+<script type="module" src="src/ui/app.mjs"></script>
+</body></html>

@@ -1,0 +1,149 @@
+[
+ {
+  "id": "P0-02 exact",
+  "input": {
+   "seed": 40003618,
+   "type": "starting",
+   "energy": 100,
+   "vertex": [
+    13.51335848642547,
+    -2054.7249785158783,
+    -349.13105856992416
+   ],
+   "direction": [
+    0.254969431141881,
+    0.5841294150450267,
+    -0.7705734330109887
+   ]
+  },
+  "clean": 29,
+  "fitDirection": [
+   -0.16878987102916515,
+   -0.9815906190142011,
+   -0.08938588312074396
+  ],
+  "fitStatus": "FIT_RENDERABLE",
+  "directionStatus": "ILLUSTRATIVE_LINEFIT",
+  "disclaimers": [
+   "LineFit is an illustrative first-pass reconstruction.",
+   "Passing internal quality checks does not establish directional accuracy.",
+   "fitSpeed is a regression slope, not a particle or photon speed; it may exceed c."
+  ],
+  "qa": {
+   "label": "SIMULATION QA ONLY",
+   "trueDirection": [
+    0.254969431141881,
+    0.5841294150450267,
+    -0.7705734330109887
+   ],
+   "angularError_deg": 123.19798699753869,
+   "hemisphereFlip": true,
+   "vertexError_m": 53.37118253147767
+  },
+  "expected_err_deg": 123.197986998,
+  "err_matches": true,
+  "clean_matches": true,
+  "rc06_status": "USABLE",
+  "rc06_err": 123.19798699753869,
+  "rc07_err": 123.19798699753869,
+  "rc07_fitStatus": "FIT_DISPLAYABLE"
+ },
+ {
+  "id": "analogue 7006668 (GPT exact input)",
+  "input": {
+   "seed": 7006668,
+   "type": "starting",
+   "vertex": [
+    363.5447376979919,
+    -2068.200532742776,
+    80.42098546382503
+   ],
+   "direction": [
+    0.45510548053211586,
+    -0.08193538570776582,
+    0.8866597961780783
+   ],
+   "energy": 100
+  },
+  "clean": 37,
+  "fitDirection": [
+   0.3136519370993926,
+   -0.8621850604411354,
+   -0.3978182800047205
+  ],
+  "fitStatus": "FIT_RENDERABLE",
+  "directionStatus": "ILLUSTRATIVE_LINEFIT",
+  "disclaimers": [
+   "LineFit is an illustrative first-pass reconstruction.",
+   "Passing internal quality checks does not establish directional accuracy.",
+   "fitSpeed is a regression slope, not a particle or photon speed; it may exceed c."
+  ],
+  "qa": {
+   "label": "SIMULATION QA ONLY",
+   "trueDirection": [
+    0.45510548053211586,
+    -0.08193538570776582,
+    0.8866597961780783
+   ],
+   "angularError_deg": 98.00973157529418,
+   "hemisphereFlip": true,
+   "vertexError_m": 71.0676056066619
+  },
+  "expected_err_deg": 98.009732,
+  "err_matches": true,
+  "clean_matches": null,
+  "rc06_status": "USABLE",
+  "rc06_err": 98.00973157529418,
+  "rc07_err": 98.00973157529418,
+  "rc07_fitStatus": "FIT_DISPLAYABLE"
+ },
+ {
+  "id": "analogue 7003149 (GPT exact input)",
+  "input": {
+   "seed": 7003149,
+   "type": "starting",
+   "vertex": [
+    62.786472059811075,
+    -2089.6347515285015,
+    -109.79675898151777
+   ],
+   "direction": [
+    -0.1344149154598042,
+    0.21693254308775067,
+    -0.9668882573759052
+   ],
+   "energy": 10
+  },
+  "clean": 30,
+  "fitDirection": [
+   -0.3319504068686053,
+   -0.8510543029059477,
+   0.4068359631166335
+  ],
+  "fitStatus": "FIT_RENDERABLE",
+  "directionStatus": "ILLUSTRATIVE_LINEFIT",
+  "disclaimers": [
+   "LineFit is an illustrative first-pass reconstruction.",
+   "Passing internal quality checks does not establish directional accuracy.",
+   "fitSpeed is a regression slope, not a particle or photon speed; it may exceed c."
+  ],
+  "qa": {
+   "label": "SIMULATION QA ONLY",
+   "trueDirection": [
+    -0.1344149154598042,
+    0.21693254308775065,
+    -0.9668882573759051
+   ],
+   "angularError_deg": 122.23324681446097,
+   "hemisphereFlip": true,
+   "vertexError_m": 15.31499100604321
+  },
+  "expected_err_deg": 122.233247,
+  "err_matches": true,
+  "clean_matches": null,
+  "rc06_status": "USABLE",
+  "rc06_err": 135.9686429878598,
+  "rc07_err": 122.23324681446097,
+  "rc07_fitStatus": "FIT_DISPLAYABLE"
+ }
+]
